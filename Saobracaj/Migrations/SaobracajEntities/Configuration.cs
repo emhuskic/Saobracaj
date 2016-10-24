@@ -39,13 +39,13 @@ namespace Saobracaj.Migrations.SaobracajEntities
                 new TipProblema {Opis="Radar" },
                 new TipProblema {Opis="Radovi na cestama" }
             };
-            tipoviproblema.ForEach(v => context.TipoviProblema.AddOrUpdate(p => p.Opis, v));
+            tipoviproblema.ForEach(v => context.TipoviProblema.Add(v));
             context.SaveChanges();
 
             new List<Problem>
             {
-                new Problem {Aktivan=true, Langitude=3.8575231, Lattitude=18.3991981,  TipProblema = tipoviproblema.Single(g => g.Opis== "Radar"), Vrijeme=DateTime.Now},
-                new Problem {Aktivan=false, Langitude=3.4, Lattitude=17.3991981, TipProblema = tipoviproblema.Single(g => g.Opis== "Zastoj"), Vrijeme=DateTime.Now}
+                new Problem {Aktivan=true, Opis="Radar!", ImagePath="http://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1449833420.8507_ePysAs_n.jpg",Langitude=43.8569997, Lattitude=18.3991981,  TipProblema = tipoviproblema.Single(g => g.Opis== "Radar"), Vrijeme=DateTime.Now},
+                new Problem {Aktivan=false, Opis = "Zastoj", ImagePath="http://www.icyte.com/system/snapshots/fs1/8/d/b/7/8db72919c9900b62f61012cb7ce080f155f33728/764bdc5be977a52c898f162696a34e9cdc7572db.jpg",Langitude=43.8569997, Lattitude=18.3531432, TipProblema = tipoviproblema.Single(g => g.Opis== "Zastoj"), Vrijeme=DateTime.Now}
 
             }.ForEach(a => context.Problemi.Add(a));
 

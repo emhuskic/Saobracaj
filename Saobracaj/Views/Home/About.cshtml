@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Saobracaj.Models.Problem>
+@{
     ViewData["Title"] = "Stanje na cestama BiH";
 
 }
@@ -37,8 +38,22 @@
     });
 
     // Where all the fun happens
-    function Initialize() {
-
+            function Initialize() {
+                var problemi =  @Html.Raw(
+        Json.Encode(
+            ((IEnumerable<Saobracaj.Models.Problem>)Model.ToList()).Select(problem => new
+            {
+                Longitude = problem.Langitude,
+                Lattitude = problem.Lattitude,
+                Opis = problem.Opis,
+                TipProblema = problem.TipProblema.Opis,
+                Vrijeme = problem.Vrijeme,
+                Aktivan = problem.Aktivan,
+                Slika = problem.ImagePath
+            })
+        )
+    );
+              
         // Google has tweaked their interface somewhat - this tells the api to use that new UI
         google.maps.visualRefresh = true;
         var Bosnia = new google.maps.LatLng(44.1945974, 16.8291577);
@@ -54,13 +69,21 @@
         var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
         // a sample list of JSON encoded data of places to visit in Tunisia
-        // you can either make up a JSON list server side, or call it from a controller using JSONResult
-        var data = [
+                // you can either make up a JSON list server side, or call it from a controller using JSONResult
+              var data=[];
+
+             for(var i=0;i<problemi.length;i++){
+                  var novi = {"Id":i, "Slika":problemi[i].Slika, "Opis:":problemi[i].Opis, "Aktivan":problemi[i].Aktivan, "PlaceName":problemi[i].Opis,"GeoLong":problemi[i].Longitude,"GeoLat":problemi[i].Lattitude ,"TipProblema":problemi[i].TipProblema};
+                  data.push(novi);
+
+              }
+
+          /* var data = [
                   { "Id": 1, "PlaceName": "Novo Sarajevo", "GeoLong": "43.8569997", "GeoLat": "18.3531432" },
                   { "Id": 2, "PlaceName": "Tesanj ", "GeoLong": "44.6111511", "GeoLat": "17.9732789" },
                   { "Id": 3, "PlaceName": "Sousse", "GeoLong": "35.8329809", "GeoLat": "10.63875" },
                   { "Id": 4, "PlaceName": "Sfax", "GeoLong": "34.745159", "GeoLat": "10.7613" }
-               ];
+               ];*/
 
         // Using the JQuery "each" selector to iterate through the JSON list and drop marker pins
         $.each(data, function (i, item) {
@@ -68,18 +91,21 @@
                 'position': new google.maps.LatLng(item.GeoLong, item.GeoLat),
                 'map': map,
                 'title': item.PlaceName
+                
             });
-
-            // Make the marker-pin blue!
-            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png')
-
-            // put in some information about each json object - in this case, the opening hours.
+            if (item.TipProblema=="Radar") marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
+            else if (item.TipProblema=="Zastoj") marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
+            else marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png')
+           // put in some information about each json object - in this case, the opening hours.
+          
             var infowindow = new google.maps.InfoWindow({
-                content: "<div class='infoDiv'><h2>" + item.PlaceName + "</div></div>"
-            });
-
+                content: "<div class='infoDiv'><h2>" + item.PlaceName + "</div></div>"+'<img src="'+item.Slika+'"height="42" width="42" >' });
+              
             // finally hook up an "OnClick" listener to the map so it pops up out info-window when the marker-pin is clicked!
+            	
+          //  infowindow.setContent('<img src="'+item.Slika+'"height="84" width="84" >');
             google.maps.event.addListener(marker, 'click', function () {
+               
                 infowindow.open(map, marker);
             });
 

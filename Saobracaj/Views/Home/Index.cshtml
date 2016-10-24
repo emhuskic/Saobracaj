@@ -5,19 +5,19 @@
 
 
 <div class="row">
-    <div>
+     <div>
         <fieldset>
             <legend>Registar neplacenih kazni</legend>
             <div class="editor-label">
                 <label for="txtPais">Unesite vaš JMBG:</label>
-            </div>
+  </div>
             <div class="editor-field">
-                @Html.TextBox("JMBG")
+                <input type="text" id="jmbg">
             </div>
+            
 
-
-
-            <input type="submit" value="Prijavi se" />
+            <input type="button" value="Provjeri" onclick="location.href='@Url.Action("Index", "Kazne")?JMBG=' + $('#jmbg').val()" />
+           
         </fieldset>
     </div>
-</div>
+ </div>
