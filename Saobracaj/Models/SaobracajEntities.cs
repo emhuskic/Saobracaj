@@ -14,8 +14,6 @@ namespace Saobracaj.Models
         public DbSet<TipProblema> TipoviProblema { get; set; }
         public DbSet<Kazna> Kazne { get; set; }
         public DbSet<Problem> Problemi { get; set; }
-
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Vlasnik>().ToTable("Vlasnici");

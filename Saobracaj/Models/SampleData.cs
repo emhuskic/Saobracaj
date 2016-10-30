@@ -35,7 +35,7 @@ namespace Saobracaj.Models
             }.ForEach(a => context.Problemi.Add(a)); 
            new List<Kazna>
             {
-                new Kazna {Iznos=300, Datum=DateTime.Now, Opis="Prekoracenje brzine", VlasnikId=1, VoziloId=1}
+                new Kazna {Iznos=300, Datum=DateTime.Now, Opis="Prekoracenje brzine", VlasnikId=1,VoziloId=1}
             }.ForEach(a => context.Kazne.Add(a)); ;
         }
 

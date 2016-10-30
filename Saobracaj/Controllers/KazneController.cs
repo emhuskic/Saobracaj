@@ -86,6 +86,8 @@ namespace Saobracaj.Controllers
         {
             if (ModelState.IsValid)
             {
+                kazna.OdgovornaOsoba = this.User.Identity.Name;
+               // kazna.DatumUnosa = DateTime.Now.ToString();
                 db.Kazne.Add(kazna);
                 db.SaveChanges();
                 return RedirectToAction("Index");

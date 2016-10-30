@@ -10,5 +10,8 @@ namespace Saobracaj.Models
         public int VoziloId { get; set; }
         public string BrojTablice { get; set; }
         public string BrojSasije { get; set; }
+
+        public string OdgovornaOsoba { get; set; }
+        public string DatumUnosa { get; set; }
     }
 }

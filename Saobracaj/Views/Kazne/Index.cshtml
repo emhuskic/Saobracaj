@@ -50,8 +50,8 @@
                     @Html.DisplayFor(modelItem => item.Datum)
                 </td>
                 <td>
-                    @Html.ActionLink("Details", "Detalji", new { id = item.KaznaId }) |
-                    @Html.ActionLink("Delete", "Brisanje", new { id = item.KaznaId })
+                    @Html.ActionLink("Detalji", "Details", new { id = item.KaznaId }) |
+                    @Html.ActionLink("Brisanje", "Delete", new { id = item.KaznaId })
                 </td>
             </tr>
         }

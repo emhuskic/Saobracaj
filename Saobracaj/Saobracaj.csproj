@@ -214,6 +214,30 @@
     <Compile Include="Migrations\SaobracajEntities\201610241149467_InitialDatabaseCreation.Designer.cs">
       <DependentUpon>201610241149467_InitialDatabaseCreation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\SaobracajEntities\201610301037277_InitialDatabaseCreation1.cs" />
+    <Compile Include="Migrations\SaobracajEntities\201610301037277_InitialDatabaseCreation1.Designer.cs">
+      <DependentUpon>201610301037277_InitialDatabaseCreation1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\SaobracajEntities\201610301044591_InitialDatabaseCreation2.cs" />
+    <Compile Include="Migrations\SaobracajEntities\201610301044591_InitialDatabaseCreation2.Designer.cs">
+      <DependentUpon>201610301044591_InitialDatabaseCreation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\SaobracajEntities\201610301047585_InitialDatabaseCreation3.cs" />
+    <Compile Include="Migrations\SaobracajEntities\201610301047585_InitialDatabaseCreation3.Designer.cs">
+      <DependentUpon>201610301047585_InitialDatabaseCreation3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\SaobracajEntities\201610301049015_InitialDatabaseCreation4.cs" />
+    <Compile Include="Migrations\SaobracajEntities\201610301049015_InitialDatabaseCreation4.Designer.cs">
+      <DependentUpon>201610301049015_InitialDatabaseCreation4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\SaobracajEntities\201610301049437_InitialDatabaseCreation5.cs" />
+    <Compile Include="Migrations\SaobracajEntities\201610301049437_InitialDatabaseCreation5.Designer.cs">
+      <DependentUpon>201610301049437_InitialDatabaseCreation5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\SaobracajEntities\201610301106118_InitialDatabaseCreation6.cs" />
+    <Compile Include="Migrations\SaobracajEntities\201610301106118_InitialDatabaseCreation6.Designer.cs">
+      <DependentUpon>201610301106118_InitialDatabaseCreation6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\SaobracajEntities\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -322,6 +346,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\SaobracajEntities\201610241149467_InitialDatabaseCreation.resx">
       <DependentUpon>201610241149467_InitialDatabaseCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\SaobracajEntities\201610301037277_InitialDatabaseCreation1.resx">
+      <DependentUpon>201610301037277_InitialDatabaseCreation1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\SaobracajEntities\201610301044591_InitialDatabaseCreation2.resx">
+      <DependentUpon>201610301044591_InitialDatabaseCreation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\SaobracajEntities\201610301047585_InitialDatabaseCreation3.resx">
+      <DependentUpon>201610301047585_InitialDatabaseCreation3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\SaobracajEntities\201610301049015_InitialDatabaseCreation4.resx">
+      <DependentUpon>201610301049015_InitialDatabaseCreation4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\SaobracajEntities\201610301049437_InitialDatabaseCreation5.resx">
+      <DependentUpon>201610301049437_InitialDatabaseCreation5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\SaobracajEntities\201610301106118_InitialDatabaseCreation6.resx">
+      <DependentUpon>201610301106118_InitialDatabaseCreation6.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

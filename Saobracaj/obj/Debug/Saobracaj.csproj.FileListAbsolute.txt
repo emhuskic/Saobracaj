@@ -83,3 +83,9 @@ c:\users\emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Deb
 c:\users\emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.Migrations.InitialCreate.resources
 c:\users\emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.csproj.GenerateResource.Cache
 c:\users\emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.Migrations.SaobracajEntities.InitialDatabaseCreation.resources
+C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.Migrations.SaobracajEntities.InitialDatabaseCreation1.resources
+C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.Migrations.SaobracajEntities.InitialDatabaseCreation2.resources
+C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.Migrations.SaobracajEntities.InitialDatabaseCreation3.resources
+C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.Migrations.SaobracajEntities.InitialDatabaseCreation4.resources
+C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.Migrations.SaobracajEntities.InitialDatabaseCreation5.resources
+C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.Migrations.SaobracajEntities.InitialDatabaseCreation6.resources
