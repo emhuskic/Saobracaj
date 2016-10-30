@@ -7,22 +7,55 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Saobracaj.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Saobracaj.Controllers
 {
     public class KazneController : Controller
     {
+        static ApplicationDbContext context = new ApplicationDbContext();
+        UserManager<ApplicationUser> UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
         private SaobracajEntities db = new SaobracajEntities();
 
         // GET: Kazne
+        
         public ActionResult Index(string jmbg)
         {
-            var kazne = db.Kazne.Include(k => k.naLice).Include(k => k.naVozilo).Where(a => a.naLice.JMBG==jmbg) ;
-            return View(kazne);
+            if (isAdminUser())
+            {
+                var kazne = db.Kazne.ToList();
+                return View(kazne);
+            }
+            else
+            {
+                var kazne = db.Kazne.Include(k => k.naLice).Include(k => k.naVozilo).Where(a => a.naLice.JMBG == jmbg);
+                return View(kazne);
+            }
+            return View();
         }
+        public bool isAdminUser()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                var user = User.Identity;
+                var s = UserManager.GetRoles(user.GetUserId());
+                if (s.Count > 0 && s[0].ToString() == "Admin")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
+    
 
-        // GET: Kazne/Details/5
-        public ActionResult Details(int? id)
+    // GET: Kazne/Details/5
+    public ActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -132,5 +165,7 @@ namespace Saobracaj.Controllers
             }
             base.Dispose(disposing);
         }
+      
     }
+   
 }

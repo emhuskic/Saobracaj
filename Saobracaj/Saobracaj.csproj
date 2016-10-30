@@ -199,6 +199,9 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KazneController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\VlasniciController.cs" />
+    <Compile Include="Controllers\VozilaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -290,6 +293,17 @@
     <Content Include="Views\Kazne\Details.cshtml" />
     <Content Include="Views\Kazne\Edit.cshtml" />
     <Content Include="Views\Kazne\Index.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Vozila\Create.cshtml" />
+    <Content Include="Views\Vozila\Delete.cshtml" />
+    <Content Include="Views\Vozila\Details.cshtml" />
+    <Content Include="Views\Vozila\Edit.cshtml" />
+    <Content Include="Views\Vozila\Index.cshtml" />
+    <Content Include="Views\Vlasnici\Create.cshtml" />
+    <Content Include="Views\Vlasnici\Delete.cshtml" />
+    <Content Include="Views\Vlasnici\Details.cshtml" />
+    <Content Include="Views\Vlasnici\Edit.cshtml" />
+    <Content Include="Views\Vlasnici\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

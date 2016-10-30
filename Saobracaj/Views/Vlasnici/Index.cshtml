@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Saobracaj.Models.Vlasnik>
+
+@{
+    ViewBag.Title = "Upravljanje vlasnicima";
+}
+
+<h2>Upravljanje vlasnicima</h2>
+
+<p>
+    @Html.ActionLink("Dodaj novog vlasnika", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.JMBG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prezime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.JMBG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prezime)
+        </td>
+        <td>
+            @Html.ActionLink("Izmjena", "Edit", new { id=item.VlasnikId }) |
+            @Html.ActionLink("Detalji", "Details", new { id=item.VlasnikId }) |
+            @Html.ActionLink("Brisanje", "Delete", new { id=item.VlasnikId })
+        </td>
+    </tr>
+}
+
+</table>
