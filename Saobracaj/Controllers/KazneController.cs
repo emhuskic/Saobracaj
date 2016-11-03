@@ -12,6 +12,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Saobracaj.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class KazneController : Controller
     {
         static ApplicationDbContext context = new ApplicationDbContext();
@@ -20,7 +21,7 @@ namespace Saobracaj.Controllers
         private SaobracajEntities db = new SaobracajEntities();
 
         // GET: Kazne
-        
+        [AllowAnonymous]
         public ActionResult Index(string jmbg)
         {
             if (isAdminUser())

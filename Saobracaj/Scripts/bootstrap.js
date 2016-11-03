@@ -523,6 +523,10 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
  * limitations under the License.
  * ======================================================================== */
 
+$('.bg').scroll(function () {
+    var x = $(this).scrollTop();
+    $(this).css('background-position', '0% ' + parseInt(-x / 10) + 'px');
+});
 
 +function ($) { "use strict";
 

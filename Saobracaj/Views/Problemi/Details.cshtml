@@ -1,0 +1,74 @@
+﻿@model Saobracaj.Models.Problem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Problem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipProblema.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipProblema.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Langitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Langitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lattitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lattitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImagePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vrijeme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vrijeme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aktivan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aktivan)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProblemId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

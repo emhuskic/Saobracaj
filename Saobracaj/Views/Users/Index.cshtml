@@ -16,8 +16,16 @@
     <h3>
         <li>@Html.ActionLink("Upravljanje vlasnicima", "Index", "Vlasnici")</li>
     </h3>
+    <h3>
+        <li>@Html.ActionLink("Upravljanje problemima", "Index", "Problemi")</li>
+    </h3>
+
 }
 else
 {
     <h2>  Dobrodosao/la <strong>@ViewBag.Name</strong> :) . </h2>
+
+    <h3>
+        <li>@Html.ActionLink("Dodaj problem", "Create", "Problemi")</li>
+    </h3>
 }  
