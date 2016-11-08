@@ -338,7 +338,19 @@
     <Content Include="Views\Problemi\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="api\" />
     <Folder Include="App_Data\" />
+    <Folder Include="css\" />
+    <Folder Include="fonts\" />
+    <Folder Include="img\" />
+    <Folder Include="js\" />
+    <Folder Include="Views\Account\css\" />
+    <Folder Include="Views\Home\css\" />
+    <Folder Include="Views\Kazne\css\" />
+    <Folder Include="Views\Manage\css\" />
+    <Folder Include="Views\Users\css\" />
+    <Folder Include="Views\Vlasnici\css\" />
+    <Folder Include="Views\Vozila\css\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

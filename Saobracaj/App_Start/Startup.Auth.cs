@@ -58,9 +58,10 @@ namespace Saobracaj
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            //app.Use
+            //Authentication(new GoogleOAuth2AuthenticationOptions());
             //{
-            //    ClientId = "",
+            //    ClientId = "",)
             //    ClientSecret = ""
             //});
         }
