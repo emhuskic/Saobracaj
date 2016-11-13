@@ -67,9 +67,9 @@
                 </button>
                 <!-- /responsive nav button -->
                 <!-- logo -->
-                <a class="navbar-brand" href="#body">
+                <a class="navbar-brand" href="~/Home/Index">
                     <h1 id="logo">
-                        <img src="~/img/logo-meghna.png" alt="Meghna" />
+                        <img src="" alt="SAOBRACAJ.ba" />
                     </h1>
                 </a>
                 <!-- /logo -->
@@ -84,6 +84,10 @@
                     {
                         <li>@Html.ActionLink("Admin panel", "Index", "Users")</li>
 
+                    }
+                    else
+                    {
+                    <li>@Html.ActionLink("Korisnički panel", "Index", "Users")</li>
                     }
                 </ul>
             </nav>
