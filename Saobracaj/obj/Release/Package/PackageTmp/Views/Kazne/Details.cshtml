@@ -1,0 +1,58 @@
+﻿@model Saobracaj.Models.Kazna
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Kazna</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.naLice.JMBG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.naLice.JMBG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.naVozilo.BrojTablice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.naVozilo.BrojTablice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Iznos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Iznos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Datum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Datum)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.KaznaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

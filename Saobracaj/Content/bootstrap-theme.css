@@ -117,9 +117,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control {
+     position: relative;
 	background-color: #2f383d;
 	border-radius: 0;
-	padding: 5px 10px;
+	padding: 10px 10px;
 	border: 0 none;
 	color: #ddd;
 }
@@ -127,7 +128,9 @@ h1, h2, h3, h4, h5, h6 {
 .form-control:focus {
 	box-shadow: 0 0 0;
 }
-
+#jmbg{
+    position: relative; 
+}
 .form-control::-webkit-input-placeholder { /*  Chrome, Safari, Opera  */
    color: #ddd;
 }

@@ -1,0 +1,17 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Emulator config file set to C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj.Azure2\csx\Debug\roles\Saobracaj\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] DiagnosticsStoreRootPath set to: C:\Users\Emina\AppData\Local\dftmp\Resources\59225035-8c22-4a6f-9b03-9054504040ba
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Loading config file: C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj.Azure2\csx\Debug\roles\Saobracaj\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Config file to read: C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj.Azure2\csx\Debug\roles\Saobracaj\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Emulator config file set to C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj.Azure2\csx\Debug\roles\Saobracaj\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:07:30] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:08:41] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [18.12.2016. 21:08:41] DiagnosticPlugin exited with code 0

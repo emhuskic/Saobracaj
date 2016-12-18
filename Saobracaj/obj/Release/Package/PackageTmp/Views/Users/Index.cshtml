@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Admin panel";
+}
+
+
+
+@if (ViewBag.displayMenu == "Yes")
+{
+    <h1>Panel za administratore</h1>
+    <h3>
+        <li>@Html.ActionLink("Upravljanje kaznama", "Index", "Kazne")</li>
+    </h3>
+    <h3>
+        <li>@Html.ActionLink("Upravljanje vozilima", "Index", "Vozila")</li>
+    </h3>
+    <h3>
+        <li>@Html.ActionLink("Upravljanje vlasnicima", "Index", "Vlasnici")</li>
+    </h3>
+    <h3>
+        <li>@Html.ActionLink("Upravljanje problemima", "Index", "Problemi")</li>
+    </h3>
+
+}
+else
+{
+    <h2>  Dobrodosao/la <strong>@ViewBag.Name</strong> :) . </h2>
+
+    <h3>
+        <li>@Html.ActionLink("Dodaj problem", "Create", "Problemi")</li>
+    </h3>
+}  

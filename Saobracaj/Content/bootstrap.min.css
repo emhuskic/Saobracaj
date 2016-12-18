@@ -9,7 +9,9 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
+#jmbg{
+    margin-left:500px;
+}
 body {
     margin: 0;
 }
@@ -110,7 +112,7 @@ code, kbd, pre, samp {
 }
 
 button, input, optgroup, select, textarea {
-    margin: 0;
+   margin-left:auto;
     font: inherit;
     color: inherit;
 }
