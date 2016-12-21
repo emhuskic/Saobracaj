@@ -9,47 +9,14 @@
 <div>
     <h4>Kazna</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.naLice.JMBG)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.naLice.JMBG)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.naVozilo.BrojTablice)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.naVozilo.BrojTablice)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Iznos)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Iznos)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Opis)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Opis)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Datum)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Datum)
-        </dd>
-
+    <dl class="dl-horizontal" >
+        <div style='background:white; width:40%; color:darkslategray; font-size:20px;'>
+        Na dan @Html.DisplayFor(model => model.Datum) osoba sa jedinstvenim maticnim brojem: 
+            @Html.DisplayFor(model => model.naLice.JMBG) je pocinila prekrsaj: 
+            @Html.DisplayFor(model => model.Opis) sa vozilom registarskih tablica: @Html.DisplayFor(model => model.naVozilo.BrojTablice) i 
+            stoga se kaznjava novcanim iznosom od: @Html.DisplayFor(model => model.Iznos) koji je potrebno uplatiti u roku od 14 dana.
+      
+    </div>
     </dl>
 </div>
 <p>

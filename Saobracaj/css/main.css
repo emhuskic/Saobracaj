@@ -31,12 +31,13 @@ body {
 	font-family: 'Ubuntu', 'Arial', sans-serif;
     line-height: 1.5;
     color: #ddd;
+    width:100%
 }
 
 ol, ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: upper-latin;
 }
 
 figure {
@@ -400,7 +401,7 @@ h1, h2, h3, h4, h5, h6 {
 ==================================================================*/
 
 #main-features {
-    padding: 70px 0;
+    padding: 0px 0;
 }
 
 .feature-media {
@@ -408,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .feature-desc a {
-	margin-right: 20px;
+	margin-right: 1px;
 }
 
 
@@ -418,6 +419,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #counter {
     background-image: url(../img/parallax/city.jpg);
+    width:100%;
     padding: 70px 0;
 }
 

@@ -22,6 +22,7 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ImagePath)
+           
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Vrijeme)
@@ -47,8 +48,8 @@
             @Html.DisplayFor(modelItem => item.Lattitude)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ImagePath)
-        </td>
+            <img src="@Html.DisplayFor(modelItem => item.ImagePath)" alt="Slika nije dostupna"width ="20%" height="auto" />
+       </td>
         <td>
             @Html.DisplayFor(modelItem => item.Vrijeme)
         </td>

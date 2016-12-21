@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Saobracaj" />
+  <setParameter name="SaobracajEntities-Web.config Connection String" value="Data Source=(LocalDb)\MSSQLLocalDB;initial catalog=Saobracaj;Integrated Security=SSPI" />
+  <setParameter name="DefaultConnection-Web.config Connection String" value="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-Saobracaj-20161024114510.mdf;Initial Catalog=aspnet-Saobracaj-20161024114510;Integrated Security=True" />
+</parameters>

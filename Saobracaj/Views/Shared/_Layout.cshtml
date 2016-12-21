@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - SAOBRACAJ.ba</title>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
      @Styles.Render("~/Content/css")
@@ -69,7 +69,7 @@
                 <!-- logo -->
                 <a class="navbar-brand" href="~/Home/Index">
                     <h1 id="logo">
-                        <img src="" alt="SAOBRACAJ.ba" />
+                        <img src="~/img/logos/najmanji.png" alt="SAOBRACAJ.ba" />
                     </h1>
                 </a>
                 <!-- /logo -->
@@ -79,7 +79,6 @@
                 <ul id="nav" class="nav navbar-nav">
                     <li>@Html.ActionLink("Početna", "Index", "Home")</li>
                     <li>@Html.ActionLink("Mapa", "About", "Home")</li>
-                    <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
                     @if (ViewContext.HttpContext.User.IsInRole("Admin"))
                     {
                         <li>@Html.ActionLink("Admin panel", "Index", "Users")</li>

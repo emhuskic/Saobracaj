@@ -27,7 +27,7 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 ==================================================================*/
 
 body {
-    background-color: #2B2C30;
+    background-color: #6CB670;
 	font-family: 'Ubuntu', 'Arial', sans-serif;
     line-height: 1.5;
     color: #ddd;
@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 1px;
     margin: 15px auto 0;
     position: relative;
-    width: 35%;
+    width: 15%;
 }
 
 .border:before {
