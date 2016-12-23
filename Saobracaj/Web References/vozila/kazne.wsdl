@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getVozila">
+        <s:complexType />
+      </s:element>
+      <s:element name="getVozilaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getVozilaResult" type="tns:ArrayOfVozilo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfVozilo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Vozilo" nillable="true" type="tns:Vozilo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Vozilo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="VoziloId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BrojTablice" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BrojSasije" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OdgovornaOsoba" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DatumUnosa" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getKazne">
+        <s:complexType />
+      </s:element>
+      <s:element name="getKazneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKazneResult" type="tns:ArrayOfKazna" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfKazna">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Kazna" nillable="true" type="tns:Kazna" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Kazna">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="KaznaId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VlasnikId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VoziloId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Iznos" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Opis" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Datum" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="naLice" type="tns:Vlasnik" />
+          <s:element minOccurs="0" maxOccurs="1" name="naVozilo" type="tns:Vozilo" />
+          <s:element minOccurs="0" maxOccurs="1" name="OdgovornaOsoba" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Vlasnik">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="VlasnikId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="JMBG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Prezime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OdgovornaOsoba" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DatumUnosa" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="getVozilaSoapIn">
+    <wsdl:part name="parameters" element="tns:getVozila" />
+  </wsdl:message>
+  <wsdl:message name="getVozilaSoapOut">
+    <wsdl:part name="parameters" element="tns:getVozilaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKazneSoapIn">
+    <wsdl:part name="parameters" element="tns:getKazne" />
+  </wsdl:message>
+  <wsdl:message name="getKazneSoapOut">
+    <wsdl:part name="parameters" element="tns:getKazneResponse" />
+  </wsdl:message>
+  <wsdl:portType name="kazneSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getVozila">
+      <wsdl:input message="tns:getVozilaSoapIn" />
+      <wsdl:output message="tns:getVozilaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKazne">
+      <wsdl:input message="tns:getKazneSoapIn" />
+      <wsdl:output message="tns:getKazneSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="kazneSoap" type="tns:kazneSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVozila">
+      <soap:operation soapAction="http://tempuri.org/getVozila" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKazne">
+      <soap:operation soapAction="http://tempuri.org/getKazne" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="kazneSoap12" type="tns:kazneSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVozila">
+      <soap12:operation soapAction="http://tempuri.org/getVozila" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKazne">
+      <soap12:operation soapAction="http://tempuri.org/getKazne" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="kazne">
+    <wsdl:port name="kazneSoap" binding="tns:kazneSoap">
+      <soap:address location="http://localhost:53355/kazne.asmx" />
+    </wsdl:port>
+    <wsdl:port name="kazneSoap12" binding="tns:kazneSoap12">
+      <soap12:address location="http://localhost:53355/kazne.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

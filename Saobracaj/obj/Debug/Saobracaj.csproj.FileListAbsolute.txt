@@ -139,4 +139,3 @@ C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Deb
 C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.csproj.GenerateResource.Cache
 C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.dll
 C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.pdb
-C:\Users\Emina\documents\visual studio 2015\Projects\Saobracaj\Saobracaj\obj\Debug\Saobracaj.csprojResolveAssemblyReference.cache

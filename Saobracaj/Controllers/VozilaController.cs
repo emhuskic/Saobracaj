@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Saobracaj.Models;
+using System.Collections;
 
 namespace Saobracaj.Controllers
 {
@@ -17,7 +18,12 @@ namespace Saobracaj.Controllers
         // GET: Vozila
         public ActionResult Index()
         {
-            return View(db.Vozila.ToList());
+           
+                vozila.kazne vs = new vozila.kazne();
+            Array lista = vs.getVozila();
+            
+             //return View(db.Vozila.ToList());
+            return View(lista);
         }
 
         // GET: Vozila/Details/5
