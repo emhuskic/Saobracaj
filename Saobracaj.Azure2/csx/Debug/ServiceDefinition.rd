@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Saobracaj.Azure2" generation="1" functional="0" release="0" Id="dbf19e2d-320e-4b75-b36a-e6165e2eca94" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Saobracaj.Azure2" generation="1" functional="0" release="0" Id="1a29aa28-ee2d-472c-a790-e5ef325c9c4a" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="Saobracaj.Azure2Group" generation="1" functional="0" release="0">
       <componentports>
@@ -70,9 +70,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="810d78d1-dab7-4a77-8e14-7976300e7a32" ref="Microsoft.RedDog.Contract\ServiceContract\Saobracaj.Azure2Contract@ServiceDefinition">
+    <implementation Id="bf2ed5ff-1836-4475-a2f5-929c0d21e0da" ref="Microsoft.RedDog.Contract\ServiceContract\Saobracaj.Azure2Contract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="880bb699-af50-47d2-9b97-0875e7c559d3" ref="Microsoft.RedDog.Contract\Interface\Saobracaj:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="377ff15d-3437-4935-8854-6431b68cbf45" ref="Microsoft.RedDog.Contract\Interface\Saobracaj:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/Saobracaj.Azure2/Saobracaj.Azure2Group/Saobracaj:Endpoint1" />
           </inPort>

@@ -11,7 +11,6 @@ namespace Saobracaj.Models
         public string JMBG { get; set; }
         public string Ime { get; set; }
         public string Prezime {get; set;}
-
         public string OdgovornaOsoba { get; set; }
         public string DatumUnosa { get; set; }
     }
